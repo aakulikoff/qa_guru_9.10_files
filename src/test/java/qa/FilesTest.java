@@ -69,7 +69,8 @@ public class FilesTest {
     @DisplayName("Скачать XLS файл и проверить содержимое")
     void xlsDownloadFileTest() throws IOException {
         open(XLSDOWNLOAD);
-        File file = $(byText("Download sample xls file")).download();
+        $((".row"),2).scrollTo();
+        File file = $(".download-button", 0).download();
 
         XLS parsedXls = new XLS(file);
         boolean checkPassed = parsedXls.excel
@@ -80,5 +81,7 @@ public class FilesTest {
                 .contains(XLSTEXT);
         assertTrue(checkPassed);
     }
+
+
 
 }
