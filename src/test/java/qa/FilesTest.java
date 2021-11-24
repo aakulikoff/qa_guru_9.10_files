@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static qa.TestData.*;
 
 
-public class FilesTest extends TestBase{
+public class FilesTest {
 
 
     @Test
@@ -74,8 +74,8 @@ public class FilesTest extends TestBase{
         XLS parsedXls = new XLS(file);
         boolean checkPassed = parsedXls.excel
                 .getSheetAt(0)
-                .getRow(3)
-                .getCell(2)
+                .getRow(1)
+                .getCell(1)
                 .getStringCellValue()
                 .contains(XLSTEXT);
         assertTrue(checkPassed);
