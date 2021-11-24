@@ -69,7 +69,7 @@ public class FilesTest {
     @DisplayName("Скачать XLS файл и проверить содержимое")
     void xlsDownloadFileTest() throws IOException {
         open(XLSDOWNLOAD);
-        File file = $(byText("Download sample xls file"),0).download();
+        File file = $(byText("Download sample xls file")).download();
 
         XLS parsedXls = new XLS(file);
         boolean checkPassed = parsedXls.excel
