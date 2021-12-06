@@ -8,5 +8,5 @@ public class TestData {
     public static String DOWNLOADURL = "https://github.com/selenide/selenide/blob/master/README.md";
     public static String PDFDOWNLOAD = "https://file-examples.com/index.php/sample-documents-download/sample-pdf-download/";
     public static String XLSDOWNLOAD = "https://file-examples.com/index.php/sample-documents-download/sample-xls-download/";
-    public static String XLSTEXT = "Mara";
+    public static String XLSTEXT = "Dulce";
 }

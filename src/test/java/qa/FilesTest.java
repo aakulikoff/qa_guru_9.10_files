@@ -74,7 +74,7 @@ public class FilesTest {
     void xlsDownloadFileTest() throws IOException {
         open(XLSDOWNLOAD);
         $((".row"),2).scrollTo();
-        File file = $(".download-button", 0).download();
+        File file = $(".download-button").download();
 
         XLS parsedXls = new XLS(file);
         boolean checkPassed = parsedXls.excel
